@@ -10,4 +10,10 @@ class ActionsTest : BasePlatformTestCase() {
         assertNotNull("ShowModifiedFilesAction must be registered", action)
         assertInstanceOf(action, ShowModifiedFilesAction::class.java)
     }
+
+    fun testShowBranchFilesAction_isRegistered() {
+        val action = ActionManager.getInstance().getAction("GitChangedFiles.ShowBranch")
+        assertNotNull("ShowBranchFilesAction must be registered", action)
+        assertInstanceOf(action, ShowBranchFilesAction::class.java)
+    }
 }
