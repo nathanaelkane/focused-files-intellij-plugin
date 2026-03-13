@@ -22,5 +22,9 @@
                 class="com.github.nathanaelkane.gitchangedfilesintellijplugin.actions.ShowBranchFilesAction"
                 text="Show Branch Files"
                 description="Navigate to a file changed on the current branch"/>
+        <action id="GitChangedFiles.ShowBranchAndModified"
+                class="com.github.nathanaelkane.gitchangedfilesintellijplugin.actions.ShowBranchAndModifiedFilesAction"
+                text="Show Branch + Modified Files"
+                description="Navigate to a file changed on the current branch or since the last commit"/>
     </actions>
 </idea-plugin>
