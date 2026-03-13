@@ -8,7 +8,8 @@ import com.github.nathanaelkane.gitchangedfilesintellijplugin.services.GitChange
 class ShowModifiedFilesAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: return
-        val files = project.service<GitChangedFilesService>().getModifiedFiles()
-        showChangedFilesPopup(project, files, promptText = "Modified file:")
+        showChangedFilesPopup(project, promptText = "Modified file:") {
+            project.service<GitChangedFilesService>().getModifiedFiles()
+        }
     }
 }

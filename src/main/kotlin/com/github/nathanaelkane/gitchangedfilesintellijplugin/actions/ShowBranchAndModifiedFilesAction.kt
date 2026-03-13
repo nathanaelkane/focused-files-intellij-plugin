@@ -8,7 +8,8 @@ import com.github.nathanaelkane.gitchangedfilesintellijplugin.services.GitChange
 class ShowBranchAndModifiedFilesAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: return
-        val files = project.service<GitChangedFilesService>().getBranchAndModifiedFiles()
-        showChangedFilesPopup(project, files, promptText = "Branch or modified file:")
+        showChangedFilesPopup(project, promptText = "Branch or modified file:") {
+            project.service<GitChangedFilesService>().getBranchAndModifiedFiles()
+        }
     }
 }
