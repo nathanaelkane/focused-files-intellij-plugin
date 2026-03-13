@@ -11,4 +11,11 @@
     <extensions defaultExtensionNs="com.intellij">
         <projectService serviceImplementation="com.github.nathanaelkane.gitchangedfilesintellijplugin.services.GitChangedFilesService"/>
     </extensions>
+
+    <actions>
+        <action id="GitChangedFiles.ShowModified"
+                class="com.github.nathanaelkane.gitchangedfilesintellijplugin.actions.ShowModifiedFilesAction"
+                text="Show Modified Files"
+                description="Navigate to a file changed since the last commit (staged or unstaged)"/>
+    </actions>
 </idea-plugin>
