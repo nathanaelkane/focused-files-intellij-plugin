@@ -5,13 +5,6 @@
     <vendor>nathanaelkane</vendor>
 
     <depends>com.intellij.modules.platform</depends>
-
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.nathanaelkane.gitchangedfilesintellijplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.nathanaelkane.gitchangedfilesintellijplugin.startup.MyProjectActivity" />
-    </extensions>
     <depends>com.intellij.modules.vcs</depends>
     <depends>Git4Idea</depends>
 </idea-plugin>
