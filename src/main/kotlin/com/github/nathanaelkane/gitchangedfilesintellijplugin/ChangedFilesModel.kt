@@ -24,6 +24,8 @@ class ChangedFilesModel(
 
     override fun willOpenEditor(): Boolean = true
 
+    override fun useMiddleMatching(): Boolean = true
+
     override fun getFullName(element: Any): String =
         (element as? VirtualFile)?.path ?: super.getFullName(element) ?: ""
 
