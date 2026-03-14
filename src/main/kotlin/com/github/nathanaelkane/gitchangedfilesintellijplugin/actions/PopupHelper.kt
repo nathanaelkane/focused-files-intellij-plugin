@@ -24,6 +24,8 @@ fun showChangedFilesPopup(project: Project, promptText: String, fileSupplier: ()
 
             val popup = ChooseByNamePopup.createPopup(project, model, null as com.intellij.psi.PsiElement?)
 
+            popup.setShowListForEmptyPattern(true)
+
             popup.invoke(object : ChooseByNamePopupComponent.Callback() {
                 override fun elementChosen(element: Any) {
                     val file = element as? VirtualFile ?: return
