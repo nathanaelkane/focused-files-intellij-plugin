@@ -26,5 +26,9 @@
                 class="com.github.nathanaelkane.gitchangedfilesintellijplugin.actions.ShowBranchAndModifiedFilesAction"
                 text="Show Branch + Modified Files"
                 description="Navigate to a file changed on the current branch or since the last commit"/>
+        <action id="GitChangedFiles.ShowOpenTabs"
+                class="com.github.nathanaelkane.gitchangedfilesintellijplugin.actions.ShowOpenTabsAction"
+                text="Show Open Tabs"
+                description="Navigate to a file currently open in an editor tab"/>
     </actions>
 </idea-plugin>
