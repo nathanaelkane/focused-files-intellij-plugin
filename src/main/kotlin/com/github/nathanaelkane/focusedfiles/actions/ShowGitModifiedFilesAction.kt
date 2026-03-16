@@ -5,7 +5,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.components.service
 import com.github.nathanaelkane.focusedfiles.services.GitChangedFilesService
 
-class ShowModifiedFilesAction : AnAction() {
+class ShowGitModifiedFilesAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: return
         showChangedFilesPopup(project, promptText = "Modified file:") {
