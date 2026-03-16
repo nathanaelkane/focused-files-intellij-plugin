@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# git-changed-files-intellij-plugin Changelog
+# focused-files-intellij-plugin Changelog
 
 ## [Unreleased]
 ### Added

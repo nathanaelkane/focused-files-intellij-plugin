@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.nathanaelkane.gitchangedfilesintellijplugin</id>
-    <name>Git Changed Files</name>
+    <id>com.github.nathanaelkane.focusedfiles</id>
+    <name>Focused Files</name>
     <vendor>nathanaelkane</vendor>
 
     <depends>com.intellij.modules.platform</depends>
@@ -9,25 +9,25 @@
     <depends>Git4Idea</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <projectService serviceImplementation="com.github.nathanaelkane.gitchangedfilesintellijplugin.services.GitChangedFilesService"/>
+        <projectService serviceImplementation="com.github.nathanaelkane.focusedfiles.services.GitChangedFilesService"/>
     </extensions>
 
     <actions>
         <!-- Shortcuts are intentionally unbound — assign them via Settings → Keymap. -->
-        <action id="GitChangedFiles.ShowModified"
-                class="com.github.nathanaelkane.gitchangedfilesintellijplugin.actions.ShowModifiedFilesAction"
+        <action id="FocusedFiles.ShowModified"
+                class="com.github.nathanaelkane.focusedfiles.actions.ShowModifiedFilesAction"
                 text="Show Modified Files"
                 description="Navigate to a file changed since the last commit (staged or unstaged)"/>
-        <action id="GitChangedFiles.ShowBranch"
-                class="com.github.nathanaelkane.gitchangedfilesintellijplugin.actions.ShowBranchFilesAction"
+        <action id="FocusedFiles.ShowBranch"
+                class="com.github.nathanaelkane.focusedfiles.actions.ShowBranchFilesAction"
                 text="Show Branch Files"
                 description="Navigate to a file changed on the current branch"/>
-        <action id="GitChangedFiles.ShowBranchAndModified"
-                class="com.github.nathanaelkane.gitchangedfilesintellijplugin.actions.ShowBranchAndModifiedFilesAction"
+        <action id="FocusedFiles.ShowBranchAndModified"
+                class="com.github.nathanaelkane.focusedfiles.actions.ShowBranchAndModifiedFilesAction"
                 text="Show Branch + Modified Files"
                 description="Navigate to a file changed on the current branch or since the last commit"/>
-        <action id="GitChangedFiles.ShowOpenTabs"
-                class="com.github.nathanaelkane.gitchangedfilesintellijplugin.actions.ShowOpenTabsAction"
+        <action id="FocusedFiles.ShowOpenTabs"
+                class="com.github.nathanaelkane.focusedfiles.actions.ShowOpenTabsAction"
                 text="Show Open Tabs"
                 description="Navigate to a file currently open in an editor tab"/>
     </actions>

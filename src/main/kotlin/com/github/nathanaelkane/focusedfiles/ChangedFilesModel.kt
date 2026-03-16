@@ -1,4 +1,4 @@
-package com.github.nathanaelkane.gitchangedfilesintellijplugin
+package com.github.nathanaelkane.focusedfiles
 
 import com.intellij.ide.util.gotoByName.SimpleChooseByNameModel
 import com.intellij.openapi.project.Project

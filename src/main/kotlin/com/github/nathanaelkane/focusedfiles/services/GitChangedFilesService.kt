@@ -1,4 +1,4 @@
-package com.github.nathanaelkane.gitchangedfilesintellijplugin.services
+package com.github.nathanaelkane.focusedfiles.services
 
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.project.Project

@@ -1,4 +1,4 @@
-package com.github.nathanaelkane.gitchangedfilesintellijplugin.actions
+package com.github.nathanaelkane.focusedfiles.actions
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
