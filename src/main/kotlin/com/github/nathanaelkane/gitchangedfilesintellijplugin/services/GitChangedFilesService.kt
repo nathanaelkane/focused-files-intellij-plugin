@@ -14,9 +14,12 @@ import git4idea.repo.GitRepositoryManager
 @Service(Service.Level.PROJECT)
 class GitChangedFilesService(private val project: Project) {
 
-    fun getModifiedFiles(): List<VirtualFile> =
-        ChangeListManager.getInstance(project).allChanges
-            .mapNotNull { it.virtualFile }
+    fun getModifiedFiles(): List<VirtualFile> {
+        val clm = ChangeListManager.getInstance(project)
+        val changed = clm.allChanges.mapNotNull { it.virtualFile }
+        val untracked = clm.unversionedFilesPaths.mapNotNull { it.virtualFile }
+        return (changed + untracked).distinctBy { it.path }
+    }
 
     fun getBranchFiles(): List<VirtualFile> =
         GitRepositoryManager.getInstance(project).repositories
