@@ -1,11 +1,11 @@
-# focused-files-intellij-plugin
+# Focused Files
 
 ![Build](https://github.com/nathanaelkane/focused-files-intellij-plugin/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/30723.svg)](https://plugins.jetbrains.com/plugin/30723)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/30723.svg)](https://plugins.jetbrains.com/plugin/30723)
 
 <!-- Plugin description -->
-Quickly navigate to files you've been working on in your git-versioned projects. Whether you're jumping back into a coding session or reviewing your progress before a commit, Focused Files scopes the _Navigate → File…_ popup to only the files that matter right now.
+An IntelliJ plugin to help you quickly navigate to files you've been working on in your git-versioned projects. Whether you're jumping back into a coding session or reviewing your progress before a commit, Focused Files scopes the _Navigate → File…_ popup to only the files that matter right now.
 
 **Modes:**
 - **Git Modified Files** - files changed since your last commit (staged and unstaged)
