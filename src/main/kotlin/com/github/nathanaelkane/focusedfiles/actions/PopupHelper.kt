@@ -1,4 +1,4 @@
-package com.github.nathanaelkane.gitchangedfilesintellijplugin.actions
+package com.github.nathanaelkane.focusedfiles.actions
 
 import com.intellij.ide.util.gotoByName.ChooseByNamePopup
 import com.intellij.ide.util.gotoByName.ChooseByNamePopupComponent
@@ -9,7 +9,7 @@ import com.intellij.openapi.progress.ProgressManager
 import com.intellij.openapi.progress.Task
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VirtualFile
-import com.github.nathanaelkane.gitchangedfilesintellijplugin.ChangedFilesModel
+import com.github.nathanaelkane.focusedfiles.ChangedFilesModel
 
 fun showChangedFilesPopup(project: Project, promptText: String, fileSupplier: () -> List<VirtualFile>) {
     var files: List<VirtualFile> = emptyList()

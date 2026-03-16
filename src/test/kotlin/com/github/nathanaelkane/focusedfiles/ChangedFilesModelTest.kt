@@ -1,4 +1,4 @@
-package com.github.nathanaelkane.gitchangedfilesintellijplugin
+package com.github.nathanaelkane.focusedfiles
 
 import com.intellij.testFramework.fixtures.BasePlatformTestCase
 import com.intellij.openapi.vfs.VirtualFile

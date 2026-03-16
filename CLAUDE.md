@@ -12,7 +12,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ./gradlew check
 
 # Run a single test class
-./gradlew test --tests "com.github.nathanaelkane.gitchangedfilesintellijplugin.MyPluginTest"
+./gradlew test --tests "com.github.nathanaelkane.focusedfiles.MyPluginTest"
 
 # Run the IDE with the plugin loaded for manual testing
 ./gradlew runIde
@@ -26,7 +26,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture
 
-This is an IntelliJ Platform Plugin built with Kotlin/Gradle using the [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template). It currently contains scaffold/template code that needs to be replaced with the actual git-changed-files functionality.
+This is an IntelliJ Platform Plugin built with Kotlin/Gradle using the [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template). It currently contains scaffold/template code that needs to be replaced with the actual focused-files functionality.
 
 **Key configuration files:**
 - `gradle.properties` — plugin metadata (`pluginVersion`, `platformVersion`, `pluginSinceBuild`), platform dependencies

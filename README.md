@@ -1,6 +1,6 @@
-# git-changed-files-intellij-plugin
+# focused-files-intellij-plugin
 
-![Build](https://github.com/nathanaelkane/git-changed-files-intellij-plugin/workflows/Build/badge.svg)
+![Build](https://github.com/nathanaelkane/focused-files-intellij-plugin/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
 
@@ -18,7 +18,7 @@
 - [ ] Configure the [CODECOV_TOKEN](https://docs.codecov.com/docs/quick-start) secret for automated test coverage reports on PRs
 
 <!-- Plugin description -->
-Quickly navigate to files you've been working on in your git-versioned projects. Whether you're jumping back into a coding session or reviewing your progress before a commit, Git Changed Files scopes the _Navigate → File…_ popup to only the files that matter right now.
+Quickly navigate to files you've been working on in your git-versioned projects. Whether you're jumping back into a coding session or reviewing your progress before a commit, Focused Files scopes the _Navigate → File…_ popup to only the files that matter right now.
 
 **Three modes:**
 - **Modified** - files changed since your last commit (staged and unstaged)
@@ -32,7 +32,7 @@ Keyboard shortcuts are unbound by default and can be assigned in _Settings → K
 
 - Using the IDE built-in plugin system:
 
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "git-changed-files-intellij-plugin"</kbd> >
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Focused Files"</kbd> >
   <kbd>Install</kbd>
 
 - Using JetBrains Marketplace:
@@ -44,7 +44,7 @@ Keyboard shortcuts are unbound by default and can be assigned in _Settings → K
 
 - Manually:
 
-  Download the [latest release](https://github.com/nathanaelkane/git-changed-files-intellij-plugin/releases/latest) and install it manually using
+  Download the [latest release](https://github.com/nathanaelkane/focused-files-intellij-plugin/releases/latest) and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
 

@@ -1,9 +1,9 @@
-package com.github.nathanaelkane.gitchangedfilesintellijplugin.actions
+package com.github.nathanaelkane.focusedfiles.actions
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.components.service
-import com.github.nathanaelkane.gitchangedfilesintellijplugin.services.GitChangedFilesService
+import com.github.nathanaelkane.focusedfiles.services.GitChangedFilesService
 
 class ShowBranchFilesAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
