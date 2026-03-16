@@ -18,15 +18,16 @@ class GitChangedFilesService(private val project: Project) {
         val clm = ChangeListManager.getInstance(project)
         val changed = clm.allChanges.mapNotNull { it.virtualFile }
         val untracked = clm.unversionedFilesPaths.mapNotNull { it.virtualFile }
-        return (changed + untracked).distinctBy { it.path }
+        return (changed + untracked).distinctBy { it.path }.sortedBy { it.name }
     }
 
     fun getBranchFiles(): List<VirtualFile> =
         GitRepositoryManager.getInstance(project).repositories
             .flatMap { repo -> branchFilesForRepo(repo) }
+            .sortedBy { it.name }
 
     fun getBranchAndModifiedFiles(): List<VirtualFile> =
-        (getBranchFiles() + getModifiedFiles()).distinctBy { it.path }
+        (getBranchFiles() + getModifiedFiles()).distinctBy { it.path }.sortedBy { it.name }
 
     private fun branchFilesForRepo(repo: GitRepository): List<VirtualFile> {
         val baseCommit = mergeBase(repo) ?: return emptyList()
