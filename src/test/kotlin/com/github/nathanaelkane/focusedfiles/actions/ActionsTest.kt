@@ -5,21 +5,21 @@ import com.intellij.testFramework.fixtures.BasePlatformTestCase
 
 class ActionsTest : BasePlatformTestCase() {
 
-    fun testShowModifiedFilesAction_isRegistered() {
-        val action = ActionManager.getInstance().getAction("FocusedFiles.ShowModified")
-        assertNotNull("ShowModifiedFilesAction must be registered", action)
-        assertInstanceOf(action, ShowModifiedFilesAction::class.java)
+    fun testShowGitModifiedFilesAction_isRegistered() {
+        val action = ActionManager.getInstance().getAction("FocusedFiles.ShowGitModifiedFiles")
+        assertNotNull("ShowGitModifiedFilesAction must be registered", action)
+        assertInstanceOf(action, ShowGitModifiedFilesAction::class.java)
     }
 
-    fun testShowBranchFilesAction_isRegistered() {
-        val action = ActionManager.getInstance().getAction("FocusedFiles.ShowBranch")
-        assertNotNull("ShowBranchFilesAction must be registered", action)
-        assertInstanceOf(action, ShowBranchFilesAction::class.java)
+    fun testShowGitBranchFilesAction_isRegistered() {
+        val action = ActionManager.getInstance().getAction("FocusedFiles.ShowGitBranchFiles")
+        assertNotNull("ShowGitBranchFilesAction must be registered", action)
+        assertInstanceOf(action, ShowGitBranchFilesAction::class.java)
     }
 
-    fun testShowBranchAndModifiedFilesAction_isRegistered() {
-        val action = ActionManager.getInstance().getAction("FocusedFiles.ShowBranchAndModified")
-        assertNotNull("ShowBranchAndModifiedFilesAction must be registered", action)
-        assertInstanceOf(action, ShowBranchAndModifiedFilesAction::class.java)
+    fun testShowGitBranchAndModifiedFilesAction_isRegistered() {
+        val action = ActionManager.getInstance().getAction("FocusedFiles.ShowGitBranchAndModifiedFiles")
+        assertNotNull("ShowGitBranchAndModifiedFilesAction must be registered", action)
+        assertInstanceOf(action, ShowGitBranchAndModifiedFilesAction::class.java)
     }
 }
