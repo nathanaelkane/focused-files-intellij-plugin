@@ -1,3 +1,5 @@
+<img src="src/main/resources/META-INF/pluginIcon.svg" width="80" height="80" alt="icon" align="left"/>
+
 # Focused Files
 
 ![Build](https://github.com/nathanaelkane/focused-files-intellij-plugin/workflows/Build/badge.svg)
