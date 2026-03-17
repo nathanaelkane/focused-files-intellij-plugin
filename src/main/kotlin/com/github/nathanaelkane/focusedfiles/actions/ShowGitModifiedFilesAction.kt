@@ -8,7 +8,7 @@ import com.github.nathanaelkane.focusedfiles.services.GitChangedFilesService
 class ShowGitModifiedFilesAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: return
-        showChangedFilesPopup(project, promptText = "Modified file:") {
+        showChangedFilesPopup(project, promptText = "Git modified file:") {
             project.service<GitChangedFilesService>().getModifiedFiles()
         }
     }
