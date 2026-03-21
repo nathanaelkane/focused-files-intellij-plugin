@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+### Changed
+
+- Tweaked the prompt text for each action.
+
+### Added
+
+- Added a screenshot.
+
+### Fixed
+
+- Fixed flaky test on CI.
+
 ## [0.0.1] - 2026-03-19
 
 ### Added
