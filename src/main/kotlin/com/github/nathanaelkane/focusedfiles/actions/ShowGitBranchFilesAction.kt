@@ -8,7 +8,7 @@ import com.github.nathanaelkane.focusedfiles.services.GitChangedFilesService
 class ShowGitBranchFilesAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: return
-        showChangedFilesPopup(project, promptText = "Git branch file:") {
+        showChangedFilesPopup(project, promptText = "Git branch files:") {
             project.service<GitChangedFilesService>().getBranchFiles()
         }
     }

@@ -7,7 +7,7 @@ import com.intellij.openapi.fileEditor.FileEditorManager
 class ShowOpenTabsAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: return
-        showChangedFilesPopup(project, promptText = "Open tab:") {
+        showChangedFilesPopup(project, promptText = "Open tabs:") {
             FileEditorManager.getInstance(project).openFiles.toList()
         }
     }
