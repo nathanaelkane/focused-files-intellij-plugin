@@ -6,6 +6,7 @@ import com.intellij.openapi.vcs.ProjectLevelVcsManager
 import com.intellij.openapi.vcs.VcsDirectoryMapping
 import com.intellij.openapi.vcs.changes.ChangeListManager
 import com.intellij.openapi.vcs.changes.ChangeListManagerImpl
+import com.intellij.openapi.vcs.changes.VcsDirtyScopeManager
 import com.intellij.openapi.vcs.impl.ProjectLevelVcsManagerImpl
 import com.intellij.openapi.vfs.LocalFileSystem
 import com.intellij.testFramework.PlatformTestUtil
@@ -143,7 +144,9 @@ class GitChangedFilesServiceTest : BasePlatformTestCase() {
     }
 
     private fun refreshAndWait() {
-        LocalFileSystem.getInstance().refresh(false)
+        LocalFileSystem.getInstance().refreshAndFindFileByIoFile(repoDir)?.refresh(false, true)
+        PlatformTestUtil.dispatchAllEventsInIdeEventQueue()
+        VcsDirtyScopeManager.getInstance(project).markEverythingDirty()
         (ChangeListManager.getInstance(project) as ChangeListManagerImpl).waitUntilRefreshed()
     }
 
