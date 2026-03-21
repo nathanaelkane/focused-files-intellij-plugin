@@ -9,7 +9,7 @@
 <!-- Plugin description -->
 An IntelliJ plugin to help you quickly navigate to files you've been working on in your git-versioned projects. Whether you're jumping back into a coding session or reviewing your progress before a commit, Focused Files opens a quick-navigation popup scoped to only the files that matter right now.
 
-**Features:**
+## Features
 
 - **Show git modified files**: navigate to files changed since the last commit (staged and unstaged)
 - **Show git branch files**: navigate to files changed on the current branch
@@ -18,6 +18,8 @@ An IntelliJ plugin to help you quickly navigate to files you've been working on 
 
 Keyboard shortcuts are unbound by default and can be assigned in _Settings → Keymap_.
 <!-- Plugin description end -->
+
+<img src="screenshots/focused-files-screenshot.png" alt="screenshot" />
 
 ## Installation
 
