@@ -7,7 +7,7 @@
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/30723.svg)](https://plugins.jetbrains.com/plugin/30723)
 
 <!-- Plugin description -->
-An IntelliJ plugin to help you quickly navigate to files you've been working on in your git-versioned projects. Whether you're jumping back into a coding session or reviewing your progress before a commit, Focused Files scopes the _Navigate → File…_ popup to only the files that matter right now.
+An IntelliJ plugin to help you quickly navigate to files you've been working on in your git-versioned projects. Whether you're jumping back into a coding session or reviewing your progress before a commit, Focused Files opens a quick-navigation popup scoped to only the files that matter right now.
 
 **Features:**
 
