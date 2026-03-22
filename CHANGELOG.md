@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [0.0.2] - 2026-03-22
+
 ### Changed
 
 - Tweaked the prompt text for each action.
@@ -23,5 +25,6 @@
 - **Show git branch + modified files**: navigate to files from either of the above combined
 - **Show open tabs**: navigate to files currently open in editor tabs
 
-[Unreleased]: https://github.com/nathanaelkane/focused-files-intellij-plugin/compare/0.0.1...HEAD
+[Unreleased]: https://github.com/nathanaelkane/focused-files-intellij-plugin/compare/0.0.2...HEAD
+[0.0.2]: https://github.com/nathanaelkane/focused-files-intellij-plugin/compare/0.0.1...0.0.2
 [0.0.1]: https://github.com/nathanaelkane/focused-files-intellij-plugin/commits/0.0.1
